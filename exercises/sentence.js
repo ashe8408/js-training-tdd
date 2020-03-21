@@ -7,6 +7,9 @@
  */
 
 // Your code:
+function sentence(a) {
+    return a.join(' ');
+} 
 
 //* Begin of tests
 const assert = require('assert');
