@@ -8,9 +8,19 @@
  */
 
 // Your code:
+function whisper(str) {
+    return '\`' + str.toLowerCase() + '\`';
+}
 
 //* Begin of tests
 const assert = require('assert');
 
-assert.fail('You must write your own tests');
+//assert.fail('You must write your own tests');
+assert.strictEqual(typeof whisper, 'function');
+assert.strictEqual(whisper.length, 1);
+assert.deepStrictEqual(whisper('SALUT LES GENS'), '`salut les gens`');
+assert.deepStrictEqual(whisper('bonjour'),'`bonjour`');
+assert.deepStrictEqual(whisper('Bonjour Tout Le Monde'),'`bonjour tout le monde`');
+assert.deepStrictEqual(whisper('258046'), '`258046`');
+
 // End of tests */

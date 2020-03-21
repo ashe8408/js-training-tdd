@@ -16,8 +16,9 @@ const assert = require('assert');
 //assert.fail('You must write your own tests');
 assert.strictEqual(typeof yell, 'function');
 assert.strictEqual(yell.length, 1);
-assert.strictEqual(yell('Hello World'), 'HELLO WORLD');
-assert.strictEqual(yell(''), '');
-assert.strictEqual(yell('Hello World'), 'HELLO WORLD');
-assert.strictEqual(yell('i wrote my own tests'), 'I WROTE MY OWN TESTS');
+assert.deepStrictEqual(yell('Hello World'), 'HELLO WORLD');
+assert.deepStrictEqual(yell(''), '');
+assert.deepStrictEqual(yell('HowDy hoo'), 'HOWDY HOO');
+assert.deepStrictEqual(yell('i wrote my own tests'), 'I WROTE MY OWN TESTS');
+assert.deepStrictEqual(yell('789456'),'789456');
 // End of tests */
