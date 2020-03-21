@@ -9,6 +9,15 @@
 
 // Your code:
 
+function repeat(a,b) {
+    let counter = 0;
+    let n = '';
+    while (counter < b) {
+        counter++;
+        n += a;
+    } return n;    
+}
+
 //* Begin of tests
 const assert = require('assert');
 
