@@ -22,5 +22,6 @@ assert.deepStrictEqual(whisper('SALUT LES GENS'), '`salut les gens`');
 assert.deepStrictEqual(whisper('bonjour'),'`bonjour`');
 assert.deepStrictEqual(whisper('Bonjour Tout Le Monde'),'`bonjour tout le monde`');
 assert.deepStrictEqual(whisper('258046'), '`258046`');
+assert.deepStrictEqual(whisper(''), '``');
 
 // End of tests */

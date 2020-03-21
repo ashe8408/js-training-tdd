@@ -17,8 +17,8 @@ const assert = require('assert');
 assert.strictEqual(typeof yell, 'function');
 assert.strictEqual(yell.length, 1);
 assert.deepStrictEqual(yell('Hello World'), 'HELLO WORLD');
-assert.deepStrictEqual(yell(''), '');
 assert.deepStrictEqual(yell('HowDy hoo'), 'HOWDY HOO');
 assert.deepStrictEqual(yell('i wrote my own tests'), 'I WROTE MY OWN TESTS');
 assert.deepStrictEqual(yell('789456'),'789456');
+assert.deepStrictEqual(yell(''), '');
 // End of tests */
